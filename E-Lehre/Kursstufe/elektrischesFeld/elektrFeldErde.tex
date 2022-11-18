@@ -3,6 +3,8 @@
 \usepackage{schule}
 \usepackage{harpoon}
 
+\usepackage{tikz}
+
 \input{../../../globalVariables.tex}
 \input{metadata.tex}
 \input{../../../headerWrapper.tex}
@@ -18,20 +20,31 @@
   wie sähe dann das durch sie hervorgerufene elektrische Feld aus?\\
   Rufe dir zuerst die Regeln zum Zeichnen der Feldlinien in Erinnerung und vervollständige die Lücken.\\
   \begin{itemize}
-   \item In einem statischen elektrischen Feld (ohne Strom und ohne Magnete) beginnen elektrische Feldlinien beginnen immer beim \luecke{3cm} Pol und enden beim \luecke{3cm} Pol oder im \luecke{3cm}. (Ausnahme: Sie beginnen oder enden an elektrischen Leitern. Sie beginnen und enden aber niemals einfach so im Raum und sind nicht in sich geschlossen.)
+   \item In einem statischen elektrischen Feld (d.h. ohne Strom und ohne Magnete) beginnen elektrische Feldlinien immer beim \luecke{3cm} Pol und enden beim \luecke{3cm} Pol oder im \luecke{3cm}. (Ausnahme: Sie beginnen oder enden an elektrischen Leitern. Sie beginnen und enden aber niemals einfach so im Raum und sind nicht in sich geschlossen.)
    \item In der Elektrostatik treten Feldlinien \luecke{3cm} aus elektrischen Leitern aus.
    \item Feldlinien \luecke{3cm} sich nicht. (Warum nochmal?)
-   \item Die Coulomb-Kraft auf einen positiv geladenen Probe-Körper in einem elektrischen Feld wirkt \luecke{3cm} zu den gezeichneten Feldlinien.
    \item Die Feldliniendichte ist proportional zum Betrag der \luecke{3cm} und damit auch zum Betrag der \luecke{5cm}.
+   \item Die Coulomb-Kraft auf einen positiv geladenen Probe-Körper in einem elektrischen Feld wirkt \luecke{3cm} zu den gezeichneten Feldlinien.\\
+   \begin{minipage}{.4\linewidth}
+    Zeiche im nebenstehenden Bild die Richtung des Kraftvektors für das runde positive Teilchen zwischen $+Q$ und $-Q$ ein.
+   \end{minipage}
+   \hfill
+   \begin{minipage}{.5\linewidth}
+    \includegraphics[width=\linewidth]{images/chargedParticleInEField.pdf}
+   \end{minipage}
   \end{itemize}
 
   
-  Zeichne nun das Feldlinienbild für das durch die Erde hervorgerufene elektrische Feld, wenn wir annehmen, dass sie eine geladene Kugel im Vakuum wäre.\\
-  \vspace{4cm}~\\
+  Zeichne nun das Feldlinienbild für das durch die Erde hervorgerufene elektrische Feld, wenn wir annehmen, dass sie eine geladene Kugel im Vakuum wäre.
+  \begin{center}
+  \vspace{1cm}
+  \tikz \draw[thick] (0,0) circle(1.5) node [black] {~~~~Erde~~~~};
+  \vspace{1cm}
+  \end{center}
+   \newpage
   \task[Proportionalitätsgesetz]
   Wenn die Erde einfach eine geladene Kugel im Vakuum wäre, wie (d.h. mit welchem Proportionalitätsgesetz) würde der Betrag $E(r)$ des elektrischen Feldes mit dem Abstand $r$ zum Mittelpunkt der Erde abnehmen?\\
   \vspace{1cm}~\\
-  \newpage
   \task[Tatsächlicher Verlauf des elektrischen Feldes]
   \begin{enumerate}
   \item In Wirklichkeit fällt der Betrag $E(r)$ des elektrischen Feldes in Abhängigkeit von $r$ jedoch viel schneller ab, als durch Aufgabe 2 vorhergesagt. Fülle die mittleren zwei Spalten in unten stehender Tabelle aus und vergleiche die letzten beiden Spalten.\\~\\~\\
@@ -41,7 +54,7 @@
     $10^4$\,m  & & & 13\,$\frac{\mathrm{V}}{\mathrm{m}}$\\~\\
     $2\cdot 10^4$\,m  & & & 1,3\,$\frac{\mathrm{V}}{\mathrm{m}}$\\~\\\hline
   \end{tabular}~\\~\\~\\
-  Platz zum Rechnen:\\\vspace{5cm}\\
+  Platz zum Rechnen:\\\vspace{3cm}\\
   \item Kannst du eine Erklärung dafür finden, dass das elektrische Feld der Erde in Wirklichkeit schneller mit der Höhe $h$ abnimmt als durch Aufgabe 2 vorhergesagt?\\
   Überlege dir dafür, was mit den Feldlinien passieren muss. Sie dürfen ja nicht im Nichts beginnen oder enden. Und trotzdem müssen sie nach außen hin weniger werden.
   \end{enumerate}
